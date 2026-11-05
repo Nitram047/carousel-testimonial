@@ -1,21 +1,24 @@
+# Nota:
+- deploy: [Testimonios LAB 03 - 03](https://nitram047.github.io/carousel-testimonial/)
+- El historial de trabajo se puede ver en la rama `develop`.
+- En la carpeta `docs/capturas/` contiene las evidencias visuales incluyendo las del tablero pero tambien vienen incluidas en este readme.
+- El archivo de PRUEBAS.md contiene el punto 10 con las pruebas de la etapa básica.
+---
+
 # Carousel de Testimonios
 
-Aplicación de testimonios con React y Vite. Práctica inicial de React de la Unidad 3 de Ingeniería de Software (TecNM Celaya, periodo AGO-DIC 2026).
+LAB 03 - 03, aplicación de testimonios utilizando React y Vite. 
 
-La interfaz muestra un testimonio a la vez con fotografía, nombre, cargo y comentario. Permite navegar con **Anterior**, **Siguiente** y **Aleatorio**, conectando los extremos del arreglo. Incluye contador de posición, mensaje cuando no hay registros y diseño adaptable a móvil y escritorio.
+La interfaz muestra un testimonio a la vez con fotografía, nombre, cargo y comentario. Permite navegar por medio de los botones **Anterior**, **Siguiente** y **Aleatorio**, conectando los extremos del arreglo. Incluye contador de posición, mensaje cuando no hay registros y diseño responsivo.
 
 ## Integrantes
+- Owen Alberto Hdz Naranjillo
+- Juan Martin Arriaga Alejos 
 
-| Nombre | Matrícula | Rol en el equipo |
-|---|---|---|
-| Owen Alberto Hdz Naranjillo | Pendiente | Documentación, pruebas y accesibilidad |
-| Juan Martin Arriaga Alejos | Pendiente | Desarrollo de componentes, estado y estilos |
-
-**Fecha de entrega:** 04/11/2026
 
 ## Etapa entregada
 
-**Etapa básica (secciones 6 a 10 de la guía).** No se incluye la ampliación de reproducción automática (sección 11). Las pruebas manuales P01 a P10 se registran en [PRUEBAS.md](./PRUEBAS.md).
+Se entrega la etapa básica que va de los puntos 6 a 10 deacuerdo al PDF de guía. 
 
 ## Tecnologías y versiones
 
@@ -28,49 +31,6 @@ La interfaz muestra un testimonio a la vez con fotografía, nombre, cargo y come
 | Vite | ^8.3.5 |
 | ESLint | ^10.13.0 |
 
-## Requisitos
-
-- Node.js LTS (se probó con v24.18.0).
-- npm.
-- Navegador moderno con herramientas de desarrollo.
-
-## Instalación
-
-```bash
-git clone https://github.com/Nitram047/carousel-testimonial.git
-cd carousel-testimonial
-npm install
-```
-
-## Ejecución
-
-```bash
-npm run dev
-```
-
-Abrir la dirección local que muestra la terminal. Debido a la configuración de `base` para GitHub Pages, la ruta es:
-
-```text
-http://localhost:5173/carousel-testimonial/
-```
-
-Detener el servidor con `Ctrl+C`.
-
-Comandos disponibles:
-
-| Comando | Resultado |
-|---|---|
-| `npm run dev` | Servidor de desarrollo con recarga en caliente. |
-| `npm run build` | Genera la versión de producción en `dist`. |
-| `npm run preview` | Sirve localmente la compilación de `dist`. |
-| `npm run lint` | Revisa el código con ESLint. |
-
-Para revisar la versión compilada:
-
-```bash
-npm run build
-npm run preview
-```
 
 ## Estructura del proyecto
 
@@ -116,18 +76,7 @@ carousel-testimonial/
 - **Diseño adaptable:** anchos revisados en 320, 768 y 1280 px, sin desplazamiento horizontal.
 - **Sin autoplay:** se entregó únicamente la etapa básica, por lo que no se usa `useEffect` ni hay botón Pausar/Reanudar.
 
-## Pruebas
-
-El registro completo está en [PRUEBAS.md](./PRUEBAS.md).
-
-- Pruebas manuales: P01 a P10.
-- Compilación: `npm run build` sin errores.
-- Linter: `npm run lint` sin errores.
-- Revisión visual y por teclado en 320, 768 y 1280 px.
-
 ## Capturas
-
-Las imágenes se muestran directamente en GitHub; al hacer clic se abre la versión completa.
 
 ### Móvil (320 px)
 
@@ -141,38 +90,32 @@ Las imágenes se muestran directamente en GitHub; al hacer clic se abre la versi
 
 <img src="docs/capturas/escritorio-1280.png" alt="Vista de escritorio de la aplicación de testimonios" width="900">
 
-## Registro de tareas
+## Tareas y tablero scrum
 
 | Tarea | Responsable | Estado | Fecha | Puntos de historia |
 |---|---|---|---|---|
-| Preparar entorno con Vite | Juan Martin Arriaga Alejos | Terminado | 2026-11-04 | 2 |
-| Crear datos de testimonios | Juan Martin Arriaga Alejos | Terminado | 2026-11-04 | 2 |
-| Implementar tarjeta Testimonial | Juan Martin Arriaga Alejos | Terminado | 2026-11-04 | 3 |
-| Implementar controles de navegación | Juan Martin Arriaga Alejos | Terminado | 2026-11-04 | 2 |
-| Implementar estado y lógica en App | Juan Martin Arriaga Alejos | Terminado | 2026-11-04 | 3 |
-| Aplicar estilos y accesibilidad | Juan Martin Arriaga Alejos y Owen Alberto Hdz Naranjillo | Terminado | 2026-11-04 | 3 |
-| Verificar con pruebas P01 a P10 | Owen Alberto Hdz Naranjillo y Juan Martin Arriaga Alejos | En proceso | 2026-11-04 | 3 |
+| Preparar entorno con Vite | Martin | Terminado | 2026-11-04 | 2 |
+| Crear datos de testimonios | Martin | Terminado | 2026-11-04 | 1 |
+| Implementar tarjeta Testimonial | Owen | Terminado | 2026-11-04 | 2 |
+| Implementar controles de navegación | Owen | Terminado | 2026-11-04 | 2 |
+| Implementar estado y lógica en App | Martin | Terminado | 2026-11-04 | 5 |
+| Aplicar estilos y accesibilidad | Martin y Owen  | Terminado | 2026-11-04 | 3 |
+| Verificar con pruebas P01 a P10 | Owen | Terminado | 2026-11-04 | 2 |
 
-## Roles de pareja (conductor y observador)
+<img src="docs/capturas/tablero.png" alt="Tablero hecho en ClickUp" width="900">
 
-| Sesión | Conductor | Observador | Fecha |
-|---|---|---|---|
-| Sesión 1 | Owen Alberto Hdz Naranjillo | Juan Martin Arriaga Alejos | 2026-11-04 |
-| Sesión 2 | Juan Martin Arriaga Alejos | Owen Alberto Hdz Naranjillo | 2026-11-04 |
+## Revisión hecha por la otra pareja
+### Miembros:
+- Martinez Flroes Javier Alexander
+- Hernandez Lopez Clara Paulina
 
-## Revisión por otra pareja
+### Lo que funciona 
+- Los componentes están bien separados: data.js tiene los datos, Testimonial muestra la tarjeta y Controls avisa con callbacks.
+- App guarda el índice con useState; Anterior, Siguiente y Aleatorio funcionan, y los extremos se conectan.
+- Aleatorio no repite el testimonio actual.
+- Se ve bien en móvil y escritorio, sin desplazamiento horizontal, y el foco es visible con Tab.
+- npm run build sin errores.
 
-| Campo | Registro |
-|---|---|
-| Integrantes revisores | Pendiente de asignar |
-| Fecha de revisión | Pendiente |
-| Componentes y casos revisados | Pendiente |
-| Observaciones | Pendiente |
-| Correcciones acordadas | Pendiente |
+### Sugerencias
+- Usar `min-height: 44px` en los botones para que sean más cómodos en el celular.
 
-## Notas de entrega
-
-- Repositorio con `package.json`, `package-lock.json` y `.gitignore`; `node_modules` y `dist` no se versionan.
-- La rama `main` contiene la versión entregable.
-- El trabajo de desarrollo se realizó en la rama `develop`.
-- La carpeta `docs/capturas/` contiene las evidencias visuales en los tres tamaños solicitados.
