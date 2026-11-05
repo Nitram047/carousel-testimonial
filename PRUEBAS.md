@@ -1,57 +1,87 @@
-# Pruebas de  P01 - P10
+# Pruebas P01 - P10
 
 Práctica inicial de React: aplicación de testimonios.
 Etapa evaluada: **etapa básica** (secciones 6 a 10).
 
-| Campo | Valor |
-|---|---|
-| Integrantes | Owen Alberto Hdz Naranjillo & Juan Martin  Arriaga Alejos |
-| Fecha de ejecución | 04/11/2026 |
-| Navegador | Brave & opera |
-| Sistema operativo | Windows 11 |
-| Node.js | v24.18.0 |
-| npm | 12.1.0 |
+- **Integrantes:** Owen Alberto Hdz Naranjillo y Juan Martin Arriaga Alejos
+- **Fecha de ejecución:** 04/11/2026
+- **Navegadores:** Brave y Opera
+- **Sistema operativo:** Windows 11
+- **Node.js:** v24.18.0
+- **npm:** 12.1.0
+- **Datos de prueba:** los 8 testimonios de `src/data.js`
 
-## Pruebas manuales
+Las pruebas P06 y P07 requirieron modificar temporalmente `src/data.js`; al terminar se restauraron los 8 testimonios originales.
 
-| ID | Prueba | Acción | Resultado esperado | Resultado obtenido | Estado | Evidencia / corrección |
-|---|---|---|---|---|---|---|
-| P01 | Inicio | Abrir o recargar la aplicación con los 8 testimonios. | Se muestra **Ana Martínez** y el contador indica **1 de 8**. | _Completar_ | [ ] Aprobado [ ] Fallido | _Completar_ |
-| P02 | Siguiente | Desde Ana Martínez (1 de 8), presionar **Siguiente**. | Se muestra **Carlos Rodríguez** y el contador indica **2 de 8**. | _Completar_ | [ ] Aprobado [ ] Fallido | _Completar_ |
-| P03 | Límite superior | Desde 1 de 8, presionar **Anterior** una vez para llegar a **María López** (8 de 8); después presionar **Siguiente**. | Desde el último registro, **Siguiente** vuelve a **Ana Martínez** y el contador indica **1 de 8**. | _Completar_ | [ ] Aprobado [ ] Fallido | _Completar_ |
-| P04 | Límite inferior | Desde Ana Martínez (1 de 8), presionar **Anterior**. | Muestra **María López** y el contador indica **8 de 8**. | _Completar_ | [ ] Aprobado [ ] Fallido | _Completar_ |
-| P05 | Aleatorio | Presionar **Aleatorio** 10 veces desde distintas posiciones. | Siempre cambia a un testimonio distinto del actual y válido. No debe repetir la posición actual. | _Completar_ | [ ] Aprobado [ ] Fallido | _Completar_ |
-| P06 | Un registro | Dejar temporalmente un solo objeto en `data.js` (por ejemplo, solo Ana) y probar los tres controles. | Se mantiene el registro visible, el contador indica **1 de 1** y no hay errores en consola. | _Completar_ | [ ] Aprobado [ ] Fallido | _Completar_ |
-| P07 | Sin registros | Dejar temporalmente el arreglo vacío (`[]`). | Aparece **"No hay testimonios disponibles."**, no se muestran tarjeta ni controles y no hay errores en consola. | _Completar_ | [ ] Aprobado [ ] Fallido | _Completar_ |
-| P08 | Recorrido completo | Con los 8 testimonios restaurados, presionar **Siguiente** 8 veces y luego **Anterior** 8 veces. Verificar que aparecen los 8 nombres y sus fotografías. | El recorrido pasa por los 8 registros, vuelve a Ana Martínez después de la octava vez, el contador cambia de **1 de 8** a **8 de 8** y todas las fotografías cargan. | _Completar_ | [ ] Aprobado [ ] Fallido | _Completar_ |
-| P09 | Presentación y accesibilidad | Revisar en 320, 768 y 1280 px con textos largos; recorrer con **Tab**, activar con **Enter** y **Espacio**; comprobar foco visible. | Sin desplazamiento horizontal, textos ajustados, controles accesibles con nombre claro y foco visible. | _Completar_ | [ ] Aprobado [ ] Fallido | _Completar_ |
-| P10 | Compilación | Ejecutar `npm run build` y revisar la consola del navegador. | La compilación termina sin errores y no aparecen errores de aplicación en consola. | _Completar_ | [ ] Aprobado [ ] Fallido | _Completar_ |
+## P01 - Inicio
+
+![Captura de P01](docs/capturas/P01.png)
+
+**Resultado:** La aplicación cargó correctamente con Ana Martínez y el contador en **1 de 8**. No aparecieron errores en consola.
+
+## P02 - Siguiente
+
+![Captura de P02](docs/capturas/P02.png)
+
+**Resultado:** Al presionar **Siguiente** se mostró Carlos Rodríguez y el contador cambió a **2 de 8** correctamente.
+
+## P03 - Límite superior
+
+![Captura de P03](docs/capturas/P03.png)
+
+**Resultado:** Desde el último testimonio, **Siguiente** regresó a Ana Martínez y el contador volvió a **1 de 8**. La navegación circular funcionó sin fallos.
+
+## P04 - Límite inferior
+
+**Resultado:** Se comprobó que al estar en Ana Martínez (1 de 8) y presionar **Anterior**, la aplicación muestra a María López y el contador cambia a **8 de 8**. Se repitió la acción varias veces y el salto siempre fue correcto, sin errores en consola. No se adjunta captura porque el estado visual resultante es equivalente al de P03.
+
+## P05 - Aleatorio
+
+**Resultado:** Se presionó **Aleatorio** 10 veces desde diferentes posiciones. En todos los casos el testimonio cambió a uno distinto del actual, el contador se mantuvo dentro del rango de 1 a 8 y no hubo errores. Al depender del azar, una captura no demuestra por sí sola la propiedad; por eso se verificó repitiendo la acción.
+
+## P06 - Un registro
+
+![Captura de P06](docs/capturas/P06.png)
+
+**Resultado:** Con un solo testimonio, el contador mostró **1 de 1** y los tres controles siguieron funcionando sin errores. Después se restauraron los 8 testimonios.
+
+## P07 - Sin registros
+
+![Captura de P07](docs/capturas/P07.png)
+
+**Resultado:** Con el arreglo vacío apareció el mensaje **"No hay testimonios disponibles."**, no se mostraron tarjeta ni controles y la consola quedó sin errores. Después se restauraron los 8 testimonios.
+
+## P08 - Recorrido completo
+
+![Captura de P08](docs/capturas/P08.png)
+
+**Resultado:** Se recorrieron los 8 testimonios con **Siguiente** y **Anterior**. El contador pasó de **1 de 8** a **8 de 8**, volvió a Ana Martínez y todas las fotografías cargaron correctamente, incluidas las de Javier López y Juan Perez.
+
+## P09 - Presentación y accesibilidad
+
+**Resultado:** Se revisó la interfaz en 320, 768 y 1280 px; no apareció desplazamiento horizontal y los textos largos se ajustaron. Con **Tab** se recorrieron los botones, con **Enter** y **Espacio** se activaron, y el foco se mantuvo visible. Las capturas de los tres tamaños están en el README; esta prueba se complementó manualmente porque el teclado y el foco no se pueden demostrar con una sola imagen congelada.
+
+## P10 - Compilación
+
+![Captura de P10](docs/capturas/P10.png)
+
+**Resultado:** `npm run build` terminó sin errores y la consola del navegador no mostró errores de aplicación. `npm run lint` también terminó sin errores.
 
 ## Correcciones y revisiones
 
-| Fecha | Prueba o revisión | Problema encontrado | Corrección aplicada | Verificación |
-|---|---|---|---|---|
-| 04/11/2026 | Revisión visual de los 8 testimonios | Las fotografías de Javier López (id 6) y Juan Perez (id 7) mostraban solo el texto alternativo porque sus URLs devolvían error 404. | Se reemplazaron ambas URLs por imágenes válidas de Unsplash en `src/data.js`. | Se verificó que las 8 fotografías cargan en el navegador. |
+### Corrección 1 - Fotografías no visibles
 
-## Correcciones ya aplicadas durante el desarrollo
+![Captura del error en las fotografías](docs/capturas/correccion-1.png)
 
-| Cambio | Archivo | Motivo |
-|---|---|---|
-| Se agregaron los testimonios con id 6, 7 y 8. | `src/data.js` | Cumplir la ampliación de datos y el contador de 8. |
-| Se cambió la fotografía duplicada del testimonio id 8. | `src/data.js` | Evitar que dos testimonios mostraran la misma imagen. |
-| Se reemplazaron las URLs rotas de las fotografías de Javier López (id 6) y Juan Perez (id 7). | `src/data.js` | Las URLs anteriores devolvían error 404 y solo se mostraba el texto alternativo. |
-| Se agregó `aria-live="polite"` al contador. | `src/App.jsx` | Anunciar la posición al cambiar de testimonio. |
-| Se agregó `type="button"` a los botones. | `src/components/control.jsx` | Evitar comportamientos no deseados de botones sin tipo. |
-| Se cambió `lang="en"` a `lang="es"` y el título a "Testimonios". | `index.html` | Ajustar el documento al contenido en español. |
-| Se actualizó `main` con los cambios de `develop`. | Repositorio | Mantener la rama de entrega con la versión funcional. |
+![Captura de las fotografías corregidas](docs/capturas/correccion-1-1.png)
 
-## Checklist de cierre
+Al revisar los 8 testimonios, las fotografías de Javier López (id 6) y Juan Perez (id 7) no se mostraban y solo aparecía el texto alternativo. Las URLs configuradas en `src/data.js` devolvían error 404. Se reemplazaron por URLs válidas de Unsplash y se verificó que las 8 fotografías cargan correctamente.
 
-- [☺] P01 a P10 ejecutadas y registradas.
-- [☺] Al menos una corrección o revisión documentada.
-- [ ] Capturas en 320, 768 y 1280 px agregadas en `docs/capturas/`.
-- [ ] `npm run build` sin errores.
-- [ ] `npm run lint` sin errores.
-- [ ] Consola del navegador sin errores de aplicación.
-- [ ] Revisión por teclado completada.
-- [ ] Revisión por otra pareja registrada en el README.
+### Otras correcciones aplicadas durante el desarrollo
+
+- Se agregaron los testimonios con id 6, 7 y 8 para completar los ocho registros.
+- Se cambió la fotografía duplicada del testimonio id 8.
+- Se agregó `aria-live="polite"` al contador.
+- Se agregó `type="button"` a los botones.
+- Se cambió `lang="en"` a `lang="es"` y el título a "Testimonios".
+- Se actualizó `main` con los cambios de `develop`.
