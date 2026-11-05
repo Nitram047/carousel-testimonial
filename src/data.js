@@ -33,6 +33,27 @@ const testimonials = [
         cargo: "Ingeniera de software",
         texto: "Gracias a esta solución podemos optimizar nuestro trabajo y concentrarnos en las tareas realmente importantes.",
         foto: "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=200"
+    },
+    {
+        id: 6,
+        nombre: "Javier López",
+        cargo: "Especialista en marketing",
+        texto: "La herramienta ha mejorado significativamente nuestra estrategia de marketing y nos ha permitido alcanzar nuestros objetivos con mayor eficacia.",
+        foto: "https://images.unsplash.com/photo-1507003211169-0a1dd723a6ba?w=200"
+    },
+    {
+        id: 7,
+        nombre: "Juan Perez",
+        cargo: "Desarrollador Frontend",
+        texto: "La plataforma es muy intuitiva y fácil de usar. Me ha ayudado a mejorar mi flujo de trabajo y a ser más productivo en mis proyectos.",
+        foto: "https://images.unsplash.com/photo-1502767089025-6572583495b0?w=200"
+    },
+    {
+        id: 8,
+        nombre: "María López",
+        cargo: "Diseñadora de experiencia de usuario",
+        texto: "La herramienta ha mejorado significativamente nuestra capacidad para crear experiencias de usuario intuitivas y atractivas.",
+        foto: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200"
     }
 ];
 
