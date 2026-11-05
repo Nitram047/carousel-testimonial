@@ -63,7 +63,7 @@ function App() {
 
       {testimonials.length > 0 && (
         <>
-          <p className="counter">
+          <p className="counter" aria-live="polite">
             {currentIndex + 1} de {testimonials.length}
           </p>
 

@@ -7,15 +7,15 @@ function Controls({
     return (
         <div className="controls">
 
-            <button onClick={onPrev}>
+            <button type="button" onClick={onPrev}>
                 Anterior
             </button>
 
-            <button onClick={onRandom}>
+            <button type="button" onClick={onRandom}>
                 Aleatorio
             </button>
 
-            <button onClick={onNext}>
+            <button type="button" onClick={onNext}>
                 Siguiente
             </button>
 
