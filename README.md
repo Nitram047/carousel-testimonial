@@ -8,8 +8,10 @@ La interfaz muestra un testimonio a la vez con fotografía, nombre, cargo y come
 
 | Nombre | Matrícula | Rol en el equipo |
 |---|---|---|
-| _Completar_ | _Completar_ | _Completar_ |
-| _Completar_ | _Completar_ | _Completar_ |
+| Owen Alberto Hdz Naranjillo | Pendiente | Documentación, pruebas y accesibilidad |
+| Juan Martin Arriaga Alejos | Pendiente | Desarrollo de componentes, estado y estilos |
+
+**Fecha de entrega:** 04/11/2026
 
 ## Etapa entregada
 
@@ -30,7 +32,7 @@ La interfaz muestra un testimonio a la vez con fotografía, nombre, cargo y come
 
 - Node.js LTS (se probó con v24.18.0).
 - npm.
-- Navegador moderno con herramientas de desarrollo para revisar los tres anchos de pantalla.
+- Navegador moderno con herramientas de desarrollo.
 
 ## Instalación
 
@@ -46,7 +48,13 @@ npm install
 npm run dev
 ```
 
-Abrir la dirección local que muestra la terminal (normalmente `http://localhost:5173`). Detener con `Ctrl+C`.
+Abrir la dirección local que muestra la terminal. Debido a la configuración de `base` para GitHub Pages, la ruta es:
+
+```text
+http://localhost:5173/carousel-testimonial/
+```
+
+Detener el servidor con `Ctrl+C`.
 
 Comandos disponibles:
 
@@ -70,6 +78,9 @@ npm run preview
 carousel-testimonial/
 ├── docs/
 │   └── capturas/          Capturas de pantalla para la entrega
+│       ├── movil-320.jpeg
+│       ├── tablet-768.png
+│       └── escritorio-1280.png
 ├── public/
 │   ├── favicon.svg
 │   └── icons.svg
@@ -116,45 +127,52 @@ El registro completo está en [PRUEBAS.md](./PRUEBAS.md).
 
 ## Capturas
 
-Reemplazar cada archivo pendiente en `docs/capturas/` y conservar los nombres para que las referencias funcionen.
+Las imágenes se muestran directamente en GitHub; al hacer clic se abre la versión completa.
 
-| Tamaño | Captura |
-|---|---|
-| Móvil (320 px) | _Pendiente: `docs/capturas/movil-320.png`_ |
-| Tablet (768 px) | _Pendiente: `docs/capturas/tablet-768.png`_ |
-| Escritorio (1280 px) | _Pendiente: `docs/capturas/escritorio-1280.png`_ |
+### Móvil (320 px)
+
+<img src="docs/capturas/movil-320.jpeg" alt="Vista móvil de la aplicación de testimonios" width="320">
+
+### Tablet (768 px)
+
+<img src="docs/capturas/tablet-768.png" alt="Vista en tablet de la aplicación de testimonios" width="640">
+
+### Escritorio (1280 px)
+
+<img src="docs/capturas/escritorio-1280.png" alt="Vista de escritorio de la aplicación de testimonios" width="900">
 
 ## Registro de tareas
 
 | Tarea | Responsable | Estado | Fecha | Puntos de historia |
 |---|---|---|---|---|
-| Preparar entorno con Vite | _Completar_ | Terminado | _Completar_ | _Completar_ |
-| Crear datos de testimonios | _Completar_ | Terminado | _Completar_ | _Completar_ |
-| Implementar tarjeta Testimonial | _Completar_ | Terminado | _Completar_ | _Completar_ |
-| Implementar controles de navegación | _Completar_ | Terminado | _Completar_ | _Completar_ |
-| Implementar estado y lógica en App | _Completar_ | Terminado | _Completar_ | _Completar_ |
-| Aplicar estilos y accesibilidad | _Completar_ | Terminado | _Completar_ | _Completar_ |
-| Verificar con pruebas P01 a P10 | _Completar_ | En proceso | _Completar_ | _Completar_ |
+| Preparar entorno con Vite | Juan Martin Arriaga Alejos | Terminado | 2026-11-04 | 2 |
+| Crear datos de testimonios | Juan Martin Arriaga Alejos | Terminado | 2026-11-04 | 2 |
+| Implementar tarjeta Testimonial | Juan Martin Arriaga Alejos | Terminado | 2026-11-04 | 3 |
+| Implementar controles de navegación | Juan Martin Arriaga Alejos | Terminado | 2026-11-04 | 2 |
+| Implementar estado y lógica en App | Juan Martin Arriaga Alejos | Terminado | 2026-11-04 | 3 |
+| Aplicar estilos y accesibilidad | Juan Martin Arriaga Alejos y Owen Alberto Hdz Naranjillo | Terminado | 2026-11-04 | 3 |
+| Verificar con pruebas P01 a P10 | Owen Alberto Hdz Naranjillo y Juan Martin Arriaga Alejos | En proceso | 2026-11-04 | 3 |
 
 ## Roles de pareja (conductor y observador)
 
 | Sesión | Conductor | Observador | Fecha |
 |---|---|---|---|
-| _Completar_ | _Completar_ | _Completar_ | _Completar_ |
-| _Completar_ | _Completar_ | _Completar_ | _Completar_ |
+| Sesión 1 | Owen Alberto Hdz Naranjillo | Juan Martin Arriaga Alejos | 2026-11-04 |
+| Sesión 2 | Juan Martin Arriaga Alejos | Owen Alberto Hdz Naranjillo | 2026-11-04 |
 
 ## Revisión por otra pareja
 
 | Campo | Registro |
 |---|---|
-| Integrantes revisores | _Completar_ |
-| Fecha de revisión | _Completar_ |
-| Componentes y casos revisados | _Completar_ |
-| Observaciones | _Completar_ |
-| Correcciones acordadas | _Completar_ |
+| Integrantes revisores | Pendiente de asignar |
+| Fecha de revisión | Pendiente |
+| Componentes y casos revisados | Pendiente |
+| Observaciones | Pendiente |
+| Correcciones acordadas | Pendiente |
 
 ## Notas de entrega
 
 - Repositorio con `package.json`, `package-lock.json` y `.gitignore`; `node_modules` y `dist` no se versionan.
 - La rama `main` contiene la versión entregable.
-- El historial de trabajo se desarrolló en la rama `develop`.
+- El trabajo de desarrollo se realizó en la rama `develop`.
+- La carpeta `docs/capturas/` contiene las evidencias visuales en los tres tamaños solicitados.

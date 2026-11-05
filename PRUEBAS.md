@@ -1,31 +1,18 @@
-# Registro de pruebas manuales - P01 a P10
+# Pruebas de  P01 - P10
 
 Práctica inicial de React: aplicación de testimonios.
-Etapa evaluada: **etapa básica** (secciones 6 a 10). No se incluyen las pruebas A01 a A07 de autoplay porque esa ampliación no se implementó.
-
-## Datos de la entrega
+Etapa evaluada: **etapa básica** (secciones 6 a 10).
 
 | Campo | Valor |
 |---|---|
-| Integrantes | _Completar_ |
-| Fecha de ejecución | _Completar_ |
-| Navegador y versión | _Completar_ |
-| Sistema operativo | _Completar_ |
+| Integrantes | Owen Alberto Hdz Naranjillo & Juan Martin  Arriaga Alejos |
+| Fecha de ejecución | 04/11/2026 |
+| Navegador | Brave & opera |
+| Sistema operativo | Windows 11 |
 | Node.js | v24.18.0 |
 | npm | 12.1.0 |
 
-## Preparación
-
-1. Instalar dependencias: `npm install`.
-2. Levantar la aplicación: `npm run dev`.
-3. Para **P01 a P07**, usar temporalmente solo los **primeros 3 testimonios** de `src/data.js` (comentar o quitar temporalmente los objetos con id 4 a 8).
-4. Para **P08**, restaurar los 8 testimonios originales.
-5. Para **P09**, usar las herramientas de desarrollo del navegador en anchos de 320, 768 y 1280 px.
-6. Para **P10**, ejecutar `npm run build` en la terminal y revisar la consola del navegador.
-
-> Importante: los nombres esperados son los de este proyecto (Ana Martínez, Carlos Rodríguez, Laura Sánchez), no los del ejemplo del PDF (Ana Pérez, Luis García, María López).
-
-## Tabla de resultados
+## Pruebas manuales
 
 | ID | Prueba | Acción | Resultado esperado | Resultado obtenido | Estado | Evidencia / corrección |
 |---|---|---|---|---|---|---|
@@ -40,9 +27,7 @@ Etapa evaluada: **etapa básica** (secciones 6 a 10). No se incluyen las pruebas
 | P09 | Presentación y accesibilidad | Revisar en 320, 768 y 1280 px con textos largos; recorrer con **Tab**, activar con **Enter** y **Espacio**; comprobar foco visible. | Sin desplazamiento horizontal, textos ajustados, controles accesibles con nombre claro y foco visible. | _Completar_ | [ ] Aprobado [ ] Fallido | _Completar_ |
 | P10 | Compilación | Ejecutar `npm run build` y revisar la consola del navegador. | La compilación termina sin errores y no aparecen errores de aplicación en consola. | _Completar_ | [ ] Aprobado [ ] Fallido | _Completar_ |
 
-## Registro de correcciones y revisiones
-
-Usar esta tabla para documentar al menos una corrección o revisión, como exige la sección 13.
+## Correcciones y revisiones
 
 | Fecha | Prueba o revisión | Problema encontrado | Corrección aplicada | Verificación |
 |---|---|---|---|---|
@@ -61,8 +46,8 @@ Usar esta tabla para documentar al menos una corrección o revisión, como exige
 
 ## Checklist de cierre
 
-- [ ] P01 a P10 ejecutadas y registradas.
-- [ ] Al menos una corrección o revisión documentada.
+- [☺] P01 a P10 ejecutadas y registradas.
+- [☺] Al menos una corrección o revisión documentada.
 - [ ] Capturas en 320, 768 y 1280 px agregadas en `docs/capturas/`.
 - [ ] `npm run build` sin errores.
 - [ ] `npm run lint` sin errores.
